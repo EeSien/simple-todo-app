@@ -33,7 +33,7 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
             setDate('')
           }}
         >
-          Add Todo
+          Add
         </button>
       </form>
   )
