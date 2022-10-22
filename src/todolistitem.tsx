@@ -25,7 +25,7 @@ const Items: React.FC<Props> = ({ todo, toggleTodo }) => {
         paddingLeft: '20px'
       }}
     >
-     Target finish date: {todo.date}
+     Expected finish date: {todo.date}
     </label>
     </div>
   )

@@ -36,8 +36,12 @@ function App () {
   }
 
   const addTodo: AddTodo = (text: string, date: string) => {
-    const newTodo = { text, complete: false, date }
-    setTodos([...todos, newTodo])
+    if (text !== '' && date !== '') {
+      const newTodo = { text, complete: false, date }
+      setTodos([...todos, newTodo])
+    } else {
+      alert('Please insert task name an date')
+    }
   }
 
   return (
