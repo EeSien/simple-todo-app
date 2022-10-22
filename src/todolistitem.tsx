@@ -10,7 +10,7 @@ interface Props {
 
 const Items: React.FC<Props> = ({ todo, toggleTodo }) => {
   return (
-    <li>
+   <div>
     <label
       style={{ textDecoration: todo.complete ? 'line-through' : undefined }}
     >
@@ -27,7 +27,7 @@ const Items: React.FC<Props> = ({ todo, toggleTodo }) => {
     >
      Target finish date: {todo.date}
     </label>
-  </li>
+    </div>
   )
 }
 

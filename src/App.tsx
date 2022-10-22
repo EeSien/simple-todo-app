@@ -41,10 +41,16 @@ function App () {
   }
 
   return (
-  <>
-    <TodoList todos={todos} toggleTodo={toggleTodo} />
-    <AddTodoForm addTodo={addTodo} />
-  </>
+    <>
+      <div id="container">
+        <div className="flex" style={{ width: '25%' }}>
+          <TodoList todos={todos} toggleTodo={toggleTodo} />
+        </div>
+        <div className="flex" style={{ width: '50%' }}>
+          <AddTodoForm addTodo={addTodo} />
+        </div>
+      </div>
+    </>
   )
 }
 
